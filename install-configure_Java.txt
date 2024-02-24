@@ -1,4 +1,15 @@
 java -version
+
+Configure JAVA_HOME:
+Open the file with :
+  gedit /etc/environment
+Add this to the file : 
+  JAVA_HOME="/usr/lib/jvm/jre-17-openjdk"
+Use source to load the variables, by running this command:
+  source /etc/environment
+Then check the variable, by running this command:
+  echo $JAVA_HOME
+
 ======================================================================================================================================================
 ======================================================================================================================================================
 
