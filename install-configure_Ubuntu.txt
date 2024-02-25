@@ -1,0 +1,12 @@
+======================================================================================================================================================
+                                                                Configure Ubuntu
+======================================================================================================================================================
+Update system:
+    apt update
+    
+Install Git:
+    apt install git
+
+Configure Git:
+    git config --global user.email "maher.fattoumi.dev@gmail.com"
+    git config --global user.name "Fattoumi"
