@@ -1,16 +1,7 @@
 ======================================================================================================================================================
-                                                                Configure Ubuntu
+                                                        Install VSCode on ubuntu
 ======================================================================================================================================================
-Install curl ==> apt install curl
+code -v
 
-Install/Configure Git
-
-Install/Configure Java
-
-Install/Configure Maven
-
-Install/Configure NodeJs & NPM
-
-Install/Configure VSCode
-
-Install/Configure Intellij
+    Install VSCode: 
+        https://code.visualstudio.com/docs/setup/linux
