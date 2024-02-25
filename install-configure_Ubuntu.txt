@@ -10,3 +10,4 @@ Install Git:
 Configure Git:
     git config --global user.email "maher.fattoumi.dev@gmail.com"
     git config --global user.name "Fattoumi"
+    git config --global credential.helper store
