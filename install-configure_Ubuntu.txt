@@ -6,3 +6,11 @@ Install/Configure Git
 Install/Configure Java
 
 Install/Configure Maven
+
+Install/Configure NodeJs
+
+Install/Configure NPM
+
+Install/Configure VSCode
+
+Install/Configure Intellij
