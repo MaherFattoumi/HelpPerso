@@ -3,5 +3,39 @@
 ======================================================================================================================================================
 node -v
 
+    Uninstall NodeJs:
+        apt remove nodejs (or apt-get remove nodejs)
+        apt update
+        apt upgrade
+        node -v
+
+    Install NVM (Node Version Manager):
+        curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+        source ~/.bashrc
+        nvm --version
+        nvm ls-remote
+        nvm install 20.11.1  (to install a particular version of NodeJs)
+        nvm ls
+        node -v
+        nvm uninstall 8.11.1 (To uninstall the concerned version)
+        
     Install NodeJs:
-        apt install nodejs
+        Specific version :
+            nvm install 20.11.1
+                OR
+            cd ~
+            curl -sL https://deb.nodesource.com/setup_20.x -o /tmp/nodesource_setup.sh
+            To verify the content :(pluma /tmp/nodesource_setup.sh)
+            bash /tmp/nodesource_setup.sh
+            apt install nodejs
+            node -v  ==> v20.11.1
+        
+        Default version :
+            apt install nodejs
+            node -v  ==> v12.22.9
+            
+        
+        Doc:: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+              https://phoenixnap.com/kb/install-latest-node-js-and-nmp-on-ubuntu
+        See nvm : node version manager to install switch between many versions
+
