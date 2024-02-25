@@ -2,9 +2,12 @@
                                                         Install MAVEN on ubuntu
 ======================================================================================================================================================
 mvn -v
+
 Install Maven:
   Update the system repository using:
     sudo apt update
+    sudo apt upgrade
+    
   Install Maven from the official repository:
     sudo apt install maven
 
@@ -13,13 +16,17 @@ Install Maven:
 ======================================================================================================================================================
 Configure MAVEN_HOME:
   Open the file (/etc/environment) with :
+    pluma /etc/environment
     gedit /etc/environment
-  Add this (M2_HOME="/usr/lib/jvm/jre-17-openjdk") to the file : 
+    
+  Add this (M2_HOME="/usr/share/maven") to the file : 
     M2_HOME="/usr/share/maven"
     MAVEN_HOME="/usr/share/maven"
     PATH="${M2_HOME}/bin:${PATH}"
+    
   Use "source" to load the variables, by running this command:
     source /etc/environment
+    
   Then check the variable, by running this command:
     echo $M2_HOME
 

@@ -1,17 +1,27 @@
 ======================================================================================================================================================
-                                                        Configure JAVA_HOME on ubuntu
+                                                      Install/Configure JAVA_HOME on ubuntu
 ======================================================================================================================================================
 java -version
 
+Install Java on Ubuntu:
+    Java 21 :: apt install openjdk-21-jre-headless
+    Java 17 :: apt install openjdk-17-jre-headless
+    
+    
 Configure JAVA_HOME:
   Open the file (/etc/environment) with :
+    pluma /etc/environment
     gedit /etc/environment
-  Add this (JAVA_HOME="/usr/lib/jvm/jre-17-openjdk") to the file : 
+    
+  Add this (JAVA_HOME="/usr/lib/jvm/jre-17-openjdk") to the file :
+    JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64" 
     JAVA_HOME="/usr/lib/jvm/jre-17-openjdk"
+    
   Use "source" to load the variables, by running this command:
     source /etc/environment
+    
   Then check the variable, by running this command:
     echo $JAVA_HOME
-
-https://askubuntu.com/questions/175514/how-to-set-java-home-for-java
+    
+  Doc:: https://askubuntu.com/questions/175514/how-to-set-java-home-for-java
 
