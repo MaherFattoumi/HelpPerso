@@ -11,3 +11,4 @@ Configure Git:
     git config --global user.email "maher.fattoumi.dev@gmail.com"
     git config --global user.name "Fattoumi"
     git config --global credential.helper store
+    Doc:: https://medium.com/@chiemekaifemegbulem/step-by-step-guide-to-updating-github-token-on-linux-terminal-a97c7117ed4b
