@@ -16,6 +16,7 @@ Configure JAVA_HOME:
   Add this (JAVA_HOME="/usr/lib/jvm/jre-17-openjdk") to the file :
     JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64" 
     JAVA_HOME="/usr/lib/jvm/jre-17-openjdk"
+    PATH="${JAVA_HOME}/bin:${PATH}"
     
   Use "source" to load the variables, by running this command:
     source /etc/environment
