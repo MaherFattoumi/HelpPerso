@@ -4,8 +4,10 @@
 java -version
 
 Install Java on Ubuntu:
-    Java 21 :: apt install openjdk-21-jre-headless
-    Java 17 :: apt install openjdk-17-jre-headless
+    JDK_21 (Java 21) :: apt install openjdk-21-jdk
+    JDK_17 (Java 17) :: apt install openjdk-17-jdk
+    JRE_21 :: apt install openjdk-21-jre-headless
+    JRE_17 :: apt install openjdk-17-jre-headless
     
     
 Configure JAVA_HOME:
