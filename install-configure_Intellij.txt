@@ -1,14 +1,8 @@
 ======================================================================================================================================================
                                                         Install Intellij on ubuntu
 ======================================================================================================================================================
-https://www.jetbrains.com/help/idea/installation-guide.html
-
 apt update
 
-apt install snapd
-    sudo snap install hello-world  ===> hello-world 6.4 from Canonical✓ installed
-    hello-world  ===> Hello World!
-    
 snap install intellij-idea-community --classic
 snap install intellij-idea-community --classic --edge
 
@@ -17,3 +11,5 @@ To launch Intellij
         OR
     intellij-idea-ultimate
 
+
+https://www.jetbrains.com/help/idea/installation-guide.html
