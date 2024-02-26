@@ -18,3 +18,5 @@ Install/Configure NodeJs & NPM
 Install/Configure VSCode
 
 Install/Configure Intellij
+
+Install/Configure docker (docker-compose)
