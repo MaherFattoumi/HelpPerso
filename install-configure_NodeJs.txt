@@ -33,7 +33,9 @@ node -v
         Default version :
             apt install nodejs
             node -v  ==> v12.22.9
-            
+
+        To switch versions of Node.js (if you have already installed it on the NVM) enter the command:
+            nvm use 8.11.1
         
         Doc:: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
               https://phoenixnap.com/kb/install-latest-node-js-and-nmp-on-ubuntu
