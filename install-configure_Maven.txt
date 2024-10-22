@@ -1,6 +1,52 @@
 ======================================================================================================================================================
                                                         Install MAVEN on ubuntu
 ======================================================================================================================================================
+Étape 1 : Télécharger Apache Maven
+    Va sur le site officiel d'Apache Maven et copie le lien de téléchargement de la dernière version stable.
+    Télécharge le fichier .tar.gz en utilisant wget (par exemple, pour Maven 3.9.4, remplace par la version la plus récente) :
+        wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
+
+Étape 2 : Extraire Maven
+    Extrayez le fichier .tar.gz téléchargé :
+        tar -xvzf apache-maven-3.9.4-bin.tar.gz
+    Déplacez le dossier extrait vers /opt/ (ou un autre répertoire de ton choix) :
+        sudo mv apache-maven-3.9.4 /opt/maven
+
+Étape 3 : Configurer les variables d'environnement
+    Ouvre le fichier .bashrc ou .zshrc (selon le shell que tu utilises) pour ajouter Maven à ton PATH :
+        vi ~/.bashrc
+    Ajoute les lignes suivantes à la fin du fichier :
+        export M2_HOME=/opt/maven
+        export PATH=$M2_HOME/bin:$PATH
+    Sauvegarde et quitte l'éditeur (Ctrl + X, puis Y, puis Entrée).
+    Recharge le fichier .bashrc pour appliquer les changements :
+        source ~/.bashrc
+
+Étape 4 : Vérifier l'installation
+    Pour vérifier que Maven est bien installé et configuré, exécute la commande suivante :
+        mvn -version
+
+======================================================================================================================================================
+                                                                Commands Maven
+======================================================================================================================================================
+mvn clean
+mvn install
+mvn test
+mvn clean install
+mvn clean install -Pintegration-lite-first –
+
+
+
+
+
+
+
+
+
+
+======================================================================================================================================================
+                                                        Install MAVEN on ubuntu  OLD
+======================================================================================================================================================
 mvn -v
 
 Install Maven:
@@ -30,11 +76,4 @@ Configure MAVEN_HOME:
   Then check the variable, by running this command:
     echo $M2_HOME
 
-======================================================================================================================================================
-                                                                Commands Maven
-======================================================================================================================================================
-mvn clean
-mvn install
-mvn test
-mvn clean install
-mvn clean install -Pintegration-lite-first –
+
